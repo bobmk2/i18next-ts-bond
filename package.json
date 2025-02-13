@@ -1,0 +1,72 @@
+{
+  "name": "i18next-ts-bond",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "A Vite plugin and CLI tool to generate TS constants from i18next translation JSON files.",
+  "main": "dist/vite-plugin.js",
+  "types": "dist/vite-plugin/index.d.ts",
+  "keywords": [
+    "i18next",
+    "typescript",
+    "vite",
+    "plugin",
+    "cli"
+  ],
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "lint": "eslint './**/*.{ts,tsx,js}'",
+    "format": "prettier --ignore-unknown --write './**/*.{ts,tsx,js}'"
+  },
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "i18next-ts-bond": "./dist/cli.js"
+  },
+  "exports": {
+    ".": "./dist/vite-plugin.js",
+    "./vite-plugin": "./dist/vite-plugin.js",
+    "./cli": "./dist/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bobmk2/i18next-ts-bond.git"
+  },
+  "author": "bobmk2",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bobmk2/i18next-ts-bond/issues"
+  },
+  "homepage": "https://github.com/bobmk2/i18next-ts-bond#readme",
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@types/node": "^22.13.1",
+    "@types/yargs": "^17.0.33",
+    "eslint": "^9.20.1",
+    "globals": "^15.14.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
+    "prettier": "^3.5.0",
+    "pretty-quick": "^4.0.0",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.8.1",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.24.0",
+    "vite": "^6.1.0"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "chokidar": "^4.0.3",
+    "i18next": "^24.2.2",
+    "yargs": "^17.7.2"
+  }
+}

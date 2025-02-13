@@ -1,3 +1,7 @@
+# Example
+example/build
+example/node_modules
+
 # Logs
 logs
 *.log
