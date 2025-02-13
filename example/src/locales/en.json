@@ -1,0 +1,28 @@
+{
+  "example": {
+    "hello": "Hello",
+    "test": {
+      "にほんご": "Japanese",
+      "const": "const",
+      "1000": "thousand",
+      "\"": "Doublequote"
+    },
+    "key": "Key",
+    "value": "Value"
+  },
+  "common": {
+    "yes": "Yes",
+    "no": "No",
+    "rank": {
+      "1st": "1st",
+      "2nd": "2nd",
+      "3rd": "3rd"
+    }
+  },
+  "messages": {
+    "welcome": "Welcome, {{name}}!"
+  },
+  "missing": {
+    "onlyEn": "Exists only en.js"
+  }
+}
